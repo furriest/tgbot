@@ -1457,7 +1457,7 @@ IP_HANDLER = CommandHandler("ip", get_bot_ip, filters=Filters.chat(OWNER_ID))
 TIME_HANDLER = CommandHandler("time", get_time, pass_args=True)
 
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
-RUNS_REGEX_HANDLER = DisableAbleRegexHandler("(?i)(maze|maza|мазе|маза|мазя)(,|!|\?).+", runs, friendly="runs")
+RUNS_REGEX_HANDLER = DisableAbleRegexHandler("(?i)(maze|maza|мазе|маза|мазя|мазь)(,|!|\?).+", runs, friendly="runs")
 RUNS_HAIKU_HANDLER = DisableAbleRegexHandler("(?i)(haiku|хайку).*", run_haiku)
 RUNS_STIH_HANDLER = DisableAbleRegexHandler("(?i)(стих|stih).*", run_stih)
 
